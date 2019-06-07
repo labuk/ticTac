@@ -1,0 +1,4 @@
+<p [ngSwitch]="_stateService.state.winner">
+  <span *ngSwitchCase="true">Ganador: {{(_stateService.state$ | async).turn}}</span>
+  <span *ngSwitchDefault>Turno de: {{(_stateService.state$ | async).turn}}</span> 
+</p>
